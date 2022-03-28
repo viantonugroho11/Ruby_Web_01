@@ -14,7 +14,7 @@
         <%# show %>
         <td><%= link_to 'Show', item %></td>
         <%# //delete %>
-        <td><%= link_to "Delete", item, method: :delete, data: { confirm: "Are you sure?" } %></td>
+        <td><%= button_to "Delete", item_path(item), method: :delete, data: { confirm: "Are you sure?" } %></td>
         <%# //edit %>
         <td><%= link_to "Edit", edit_item_path(item) %></td>
         
